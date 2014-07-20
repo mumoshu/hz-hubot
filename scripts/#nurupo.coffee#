@@ -1,0 +1,22 @@
+# Description:
+#   Joke commands.
+#
+# Commands:
+#   ’¤Μ’¤λ’¤έ - You reply with, "σσφστΎσσο" When you post a "’¤Μ’¤λ’¤έ" word.
+#
+# Notes:
+#   ’¥Ν’¥Ώ/’¥Έ’¥η’΅Ό’¥―’·Ο’¤Ξbot’Α΄’ΘΜ
+
+module.exports = (robot) ->
+  robot.hear /’¤Μ’¤λ’¤έ/, (msg) ->
+    msg.send """
+```
+   τ¦ϋ’΅²τ¦ϋ     ’΅ΐ’΅ΐ
+’΅Κ  ’΅¦τψ ’΅¦’΅Λ  | | σσφστΎσσο
+ ’¤Θ     ’΅Λ  | |
+  ’£Ω /’¥Ξ     ’ΏΝ
+   / ’΅Λ    < >   _τ¦ϋ  τψΙ
+’΅²/’¤·'   ’΅Ώ’΅Ώ  ’£Φ’΅®τ¨΄΄’΅Λ/
+’΅Κ’΅²’¥Υ’ΧΔ             / τφπ>> @#{msg.message.user.name}
+```
+  """
